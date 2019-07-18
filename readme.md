@@ -123,7 +123,7 @@ To see Service
 ```bash
 9. kubect get svc --namespace=staging
 ```
-It will give an externel ip, Use that ip for communicating with guestbook application
+### It will give an externel ip, Use that ip for communicating with guestbook application
 
 
 ## ############################################################################
@@ -182,7 +182,7 @@ To see Service
 ```bash
 9. kubect get svc --namespace=production 
 ```
-It will give an externel ip, Use that ip for communicating with guestbook application
+### It will give an externel ip, Use that ip for communicating with guestbook application
 
 
 
@@ -213,7 +213,7 @@ To see Deployments
 
 ## ########################################################################
 
-
+## View the [images] (https://github.com/MangalAnkur/Kubernetes_Guestbook/images) for all the deployments of activity.
 
 
 
