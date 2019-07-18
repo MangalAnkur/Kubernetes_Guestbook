@@ -1,5 +1,7 @@
 # GuestBook
 
+## Visit [images](https://github.com/MangalAnkur/Kubernetes_Guestbook/tree/master/Images) to view the outcome after deployments.
+
 ## Install nginx ingress controller
 
 Visit [configuration files](https://github.com/MangalAnkur/Kubernetes_Guestbook)  to download the configuration files
@@ -212,25 +214,5 @@ To see Deployments
 ```
 
 ## ########################################################################
-
-## View the [images](https://github.com/MangalAnkur/Kubernetes_Guestbook/tree/master/Images) for all the deployments of activity.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
