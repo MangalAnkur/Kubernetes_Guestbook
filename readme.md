@@ -213,7 +213,7 @@ To see Deployments
 
 ## ########################################################################
 
-## View the [images] (https://github.com/MangalAnkur/Kubernetes_Guestbook/images) for all the deployments of activity.
+## View the [images](https://github.com/MangalAnkur/Kubernetes_Guestbook/tree/master/Images) for all the deployments of activity.
 
 
 
