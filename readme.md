@@ -118,6 +118,14 @@ Service To communicate by Frontend
 8. kubectl create -f frontend-service.yaml --namespace=staging
 ```
 
+To see Service
+
+```bash
+9. kubect get svc --namespace=staging
+```
+It will give an externel ip, Use that ip for communicating with guestbook application
+
+
 ## ############################################################################
 
 ## Now for guest book on Production
@@ -169,7 +177,20 @@ Service To communicate by Frontend
 8. kubectl create -f frontend-service.yaml --namespace=production
 ```
 
+To see Service
+
+```bash
+9. kubect get svc --namespace=production 
+```
+It will give an externel ip, Use that ip for communicating with guestbook application
+
+
+
 ## Auto scaling on productuion and Stage
+
+Visit [configuration files](https://github.com/MangalAnkur/Kubernetes_Guestbook)  to download the configuration files
+
+Run the following commands
 
 ```bash
 1. kubectl apply -f redis-master-pod-utilization.yaml --namespace=staging
@@ -179,15 +200,15 @@ Service To communicate by Frontend
 5. kubectl apply -f redis-master-slave-utilization.yaml --namespace=production
 6. kubectl apply -f redis-slave-pod-utilization.yaml --namespace=production
 ```
-Or by Commands
+Or without using yaml files
 
 ```bash
 To see Deployments
 1. kubectl get deployment  --namespace=production
-2. kubectl autoscale deployment <deployment name> --min=3 --max=15 --cpu-percent=70  --namespace=production
+2. kubectl autoscale deployment <deployment name> --min=3 --max=15 --cpu-percent=75  --namespace=production
 
 3.  kubectl get deployment  --namespace=staging
-4. kubectl autoscale deployment <deployment name> --min=3 --max=15 --cpu-percent=70  --namespace=staging
+4. kubectl autoscale deployment <deployment name> --min=3 --max=15 --cpu-percent=75  --namespace=staging
 ```
 
 ## ########################################################################
