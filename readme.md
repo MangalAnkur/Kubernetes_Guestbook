@@ -128,6 +128,13 @@ To see Service
 ```
 ### It will give an externel ip, Use that ip for communicating with guestbook application
 
+Or make entry in host file
+
+```bash
+10. external_ip=$(kubectl get services --namespace=staging  frontend --output jsonpath='{.status.loadBalancer.ingress[0].ip}')
+11. echo "$external_ip staging-guestbook.mstakx.io "  >> /etc/hosts
+```
+
 
 ## ############################################################################
 
@@ -187,6 +194,12 @@ To see Service
 ```
 ### It will give an externel ip, Use that ip for communicating with guestbook application
 
+Or make entry in host file
+
+```bash
+10. external_ip=$(kubectl get services --namespace=production  frontend --output jsonpath='{.status.loadBalancer.ingress[0].ip}')
+11. echo "$external_ip guestbook.mstakx.io "  >> /etc/hosts
+```
 
 
 ## Auto scaling on productuion and Stage
