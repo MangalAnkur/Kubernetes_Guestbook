@@ -1,7 +1,7 @@
 # GuestBook
 
 ## Visit [images](https://github.com/MangalAnkur/Kubernetes_Guestbook/tree/master/Images) to view the outcome after deployments.
-
+## Use [Wrapper script](https://github.com/MangalAnkur/Kubernetes_Guestbook) for configuration and deployment
 ## Install nginx ingress controller
 
 Visit [configuration files](https://github.com/MangalAnkur/Kubernetes_Guestbook)  to download the configuration files
@@ -59,13 +59,14 @@ To see services
 Port forward to your localmachine
 
 ```bash
-13. kubectl port-forward <nginx-ingress-pod> 8080:8080 --namespace=nginx-ingress
+13. pod_name=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}' --namespace=nginx-ingress)
+14. kubectl port-forward $pod_name 8080:8080 --namespace=nginx-ingress
 ```
 
 To see details of nginx-ingress namspace
 
 ```bash
-14. kubectl describe svc nginx-ingress --namespace=nginx-ingress
+15. kubectl describe svc nginx-ingress --namespace=nginx-ingress
 ```
 
 
@@ -182,7 +183,7 @@ Service To communicate by Frontend
 To see Service
 
 ```bash
-9. kubect get svc --namespace=production 
+9. kubectl get svc --namespace=production 
 ```
 ### It will give an externel ip, Use that ip for communicating with guestbook application
 
