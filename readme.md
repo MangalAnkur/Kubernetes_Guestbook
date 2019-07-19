@@ -1,7 +1,7 @@
 # GuestBook
 
 ## Visit [images](https://github.com/MangalAnkur/Kubernetes_Guestbook/tree/master/Images) to view the outcome after deployments.
-## Use [Wrapper script](https://github.com/MangalAnkur/Kubernetes_Guestbook) for configuration and deployment
+## Use [Wrapper script](https://github.com/MangalAnkur/Kubernetes_Guestbook/blob/master/Script.sh) for configuration and deployment
 ## Install nginx ingress controller
 
 Visit [configuration files](https://github.com/MangalAnkur/Kubernetes_Guestbook)  to download the configuration files
