@@ -5,13 +5,6 @@ gcloud container clusters get-credentials mstakx --zone us-central1-a --project 
 echo "installing kubectl ..."
 snap install kubectl --classic
 
-echo "Instaling git ..."
-apt install git 
-
-echo "Cloning git repository ..."
-git clone https://github.com/MangalAnkur/Kubernetes_Guestbook
-cd Kubernetes_Guestbook
-
 echo " Nginx-ingress controller deployment starting..."
 echo "creating namespace ..."
 kubectl apply -f nginx-ingress/ns-and-sa.yaml
