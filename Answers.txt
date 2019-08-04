@@ -1,0 +1,16 @@
+Question: What was the node size chosen for the Kubernetes nodes? And why?
+Answer: The node size I choose for the Kubernetes is 
+1.	CPU: 940 mCPU
+2.	Memory:  2.77 GB
+3.	Storage: 0
+Because here I deployed a load balancer, Redis master, Redis slave and a frontend pod which require this much RAM and CPU. Currently the setup does not require any storage so I do not allocate any storage to the node. 
+
+Question: What method was chosen to install the demo application and ingress controller on the cluster, justify the method used?
+Answer: For ingress controller and demo application I created some yml files.  I created two different namespace one for production and for staging. Then I deployed my yml files in the namespace by the commands. 
+
+Question: What would be your chosen solution to monitor the application on the cluster and why?
+Answer: To monitor the application I I use kubectl proxy by which I can monitor the complete Kubernetes cluster. I can monitor the all details of namespaces, pods, RAM, CPUs, Storage, network, Load balancer and all.  
+For a better monitoring I can use the Applications Manager's Kubernetes monitoring tool for monitoring and detailed information of pods, load, requests and all others. 
+
+Question:  What additional components / plugins would you install on the cluster to manage it better?
+Answer:  There are many plugins, by kubectl plugin list command we can see the path for valid plugin executables. Or we can simply create our own plugin based on our requirement. We can also use device plugin framework. 
